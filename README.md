@@ -69,7 +69,7 @@ AndroidImGui-UE/
 The only game-specific value is the offset to the `android_app*` inside `libUE4.so` in `Main/Entry.cpp`:
 
 ```cpp
-g_App = *(android_app **)(Data.libUE4 + 0x19DEFED0); // 0x19DEFED0 is the offset of GNativeAndroidApp in libUE4.so
+g_App = *(android_app **)(Data.libUE4 + 0x19DEFED0); // 0x19DEFED0 is the offset of GNativeAndroidApp in libUE4.so (this offset is for Garena Delta Force version 1.203.37110.3901)
 ```
 
 Find the correct offset for your target build and update this line.
